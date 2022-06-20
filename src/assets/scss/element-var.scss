@@ -1,0 +1,23 @@
+/*
+ * @Description: 修改 element-plus css 变量
+ * @Author: cdl
+ * @Date: 2022-06-11 19:57:31
+ * @LastEditors: cdl
+ * @LastEditTime: 2022-06-17 16:58:49
+ */
+:root {
+	/* 颜色
+	------------------------------- */
+	--el-color-white: #ffffff;
+	--el-color-black: #000000;
+
+	/* 边框颜色
+	------------------------------- */
+	--el-border-color: #b2b2b2; // 一级边框颜色
+	--el-border-color-light: #e2e2e2; // 二级边框颜色
+	--el-border-color-lighter: #e2e2e2; // 三级边框颜色
+
+	/* 字体颜色
+	------------------------------- */
+	--el-text-color-primary: #383838; // 字体主题色
+}

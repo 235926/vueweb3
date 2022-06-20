@@ -1,0 +1,253 @@
+/*
+ * @Description: 自定义样式
+ * @Author: cdl
+ * @Date: 2022-06-13 16:44:45
+ * @LastEditors: cdl
+ * @LastEditTime: 2022-06-20 10:11:10
+ */
+html,
+body,
+#app {
+	width: 100%;
+	height: 100%;
+	font-family: var(--el-font-family);
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	font-size: 14px;
+	overflow: hidden;
+	position: relative;
+}
+
+/* 颜色
+------------------------------- */
+.color-primary {
+	color: var(--el-color-primary);
+}
+.color-success {
+	color: var(--el-color-success);
+}
+.color-warning {
+	color: var(--el-color-warning);
+}
+.color-danger {
+	color: var(--el-color-danger);
+}
+.color-info {
+	color: var(--el-color-info);
+}
+
+// 去除边框
+.border-none {
+	border: none !important;
+}
+
+/* 鼠标样式
+------------------------------- */
+// 默认
+.c-default {
+	cursor: default !important;
+}
+// 帮助
+.c-help {
+	cursor: help !important;
+}
+// 手指
+.c-pointer {
+	cursor: pointer !important;
+}
+// 移动
+.c-move {
+	cursor: move !important;
+}
+
+/* 宽高 100%
+  ------------------------------- */
+.w100 {
+	width: 100% !important;
+}
+
+.h100 {
+	height: 100% !important;
+}
+
+.vh100 {
+	height: 100vh !important;
+}
+
+.max100vh {
+	max-height: 100vh !important;
+}
+
+.min100vh {
+	min-height: 100vh !important;
+}
+
+/* flex 弹性布局
+------------------------------- */
+.flex {
+	display: flex;
+}
+
+.flex-inline {
+	display: inline-flex;
+}
+
+.flex-auto {
+	flex: 1;
+	overflow: hidden;
+}
+
+// 上下左右居中
+.flex-center {
+	@extend .flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// 两端对齐并垂直居中 - 内联模块
+.flex-center-inline {
+	@extend .flex-inline;
+	justify-content: center;
+	align-items: center;
+}
+
+// 两端对齐并垂直居中
+.flex-between-center {
+	@extend .flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// 列布局
+.flex-column {
+	@extend .flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+// 列布局 - 上下左右居中
+.flex-column-center {
+	@extend .flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@extend .flex-auto;
+}
+
+.flex-margin {
+	margin: auto;
+}
+
+.flex-warp {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	margin: 0 -5px;
+
+	.flex-warp-item {
+		padding: 5px;
+
+		.flex-warp-item-box {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+/* 字体大小全局样式
+------------------------------- */
+@for $i from 12 through 100 {
+	.font#{$i} {
+		font-size: #{$i}px !important;
+	}
+}
+
+/* 外边距、内边距全局样式
+------------------------------- */
+@for $i from 0 through 100 {
+	.mt#{$i} {
+		margin-top: #{$i}px !important;
+	}
+
+	.mr#{$i} {
+		margin-right: #{$i}px !important;
+	}
+
+	.mb#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+
+	.ml#{$i} {
+		margin-left: #{$i}px !important;
+	}
+
+	.mlr#{$i} {
+		margin-left: #{$i}px !important;
+		margin-right: #{$i}px !important;
+	}
+
+	.mtb#{$i} {
+		margin-top: #{$i}px !important;
+		margin-bottom: #{$i}px !important;
+	}
+
+	.margin#{$i} {
+		margin: #{$i}px !important;
+	}
+
+	.pt#{$i} {
+		padding-top: #{$i}px !important;
+	}
+
+	.pr#{$i} {
+		padding-right: #{$i}px !important;
+	}
+
+	.pb#{$i} {
+		padding-bottom: #{$i}px !important;
+	}
+
+	.pl#{$i} {
+		padding-left: #{$i}px !important;
+	}
+
+	.plr#{$i} {
+		padding-left: #{$i}px !important;
+		padding-right: #{$i}px !important;
+	}
+
+	.ptb#{$i} {
+		padding-top: #{$i}px !important;
+		padding-bottom: #{$i}px !important;
+	}
+
+	.padding#{$i} {
+		padding: #{$i}px !important;
+	}
+
+	// 搭配 el-row 和 el-col 使用的
+	.row-gap#{$i} {
+		row-gap: #{$i}px !important;
+	}
+
+	.column-gap#{$i} {
+		column-gap: #{$i}px !important;
+	}
+
+	.gap#{$i} {
+		gap: #{$i}px #{$i}px !important;
+	}
+}
+
+/* svg 默认颜色
+------------------------------- */
+.svg-icon {
+	&.wps {
+		color: #3a80fc;
+	}
+
+	&.pdf {
+		color: #fa4e4e;
+	}
+}

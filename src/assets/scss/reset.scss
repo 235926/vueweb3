@@ -1,0 +1,34 @@
+/*
+ * @Description: css 重置样式
+ * @Author: cdl
+ * @Date: 2022-06-11 12:12:33
+ * @LastEditors: cdl
+ * @LastEditTime: 2022-06-19 17:56:16
+ */
+* {
+	box-sizing: border-box;
+}
+
+li {
+	font-size: 14px;
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(144, 147, 153, 0.3);
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}

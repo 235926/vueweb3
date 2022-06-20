@@ -1,0 +1,20 @@
+/*
+ * @Description: 安装插件样式
+ * @Author: cdl
+ * @Date: 2022-06-11 12:12:33
+ * @LastEditors: cdl
+ * @LastEditTime: 2022-06-13 14:37:28
+ */
+
+/* nprogress 进度条跟随主题颜色
+------------------------------- */
+#nprogress {
+	div.bar {
+		background: var(--el-color-primary) !important;
+		z-index: 9999999 !important;
+
+		.peg {
+			box-shadow: 0 0 10px var(--el-color-primary), 0 0 5px var(--el-color-primary) !important;
+		}
+	}
+}

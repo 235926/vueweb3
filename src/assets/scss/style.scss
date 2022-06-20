@@ -1,0 +1,41 @@
+/*
+ * @Description: 页面通用样式
+ * @Author: cdl
+ * @Date: 2022-06-11 14:12:03
+ * @LastEditors: cdl
+ * @LastEditTime: 2022-06-14 13:58:00
+ */
+
+// 主体内容边框
+.page-container {
+	border: 1px solid var(--el-border-color-lighter);
+	border-radius: 4px;
+
+	// 内容部分
+	.content {
+		border-radius: 0px 0px 4px 4px;
+		background-color: #fff;
+
+		.left {
+			width: 300px;
+			padding: 20px;
+			border-right: 1px solid var(--el-border-color-lighter);
+
+			.el-input .el-icon {
+				color: var(--el-color-primary);
+			}
+		}
+
+		.right {
+			flex: 1;
+			padding: 20px;
+			overflow: hidden;
+		}
+
+		.btn {
+			.el-button {
+				min-width: 100px;
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+/*
+ * @Description: 主布局样式
+ * @Author: cdl
+ * @Date: 2022-06-11 12:12:33
+ * @LastEditors: cdl
+ * @LastEditTime: 2022-06-17 16:18:17
+ */
+
+.layout-container {
+	width: 100%;
+	height: 100%;
+
+	// 顶栏容器
+	.layout-header {
+		padding: 0;
+		height: auto;
+
+		// 图标背景
+		.svg-icon-container {
+			height: var(--rh-header-height);
+			line-height: var(--rh-header-height);
+			padding: 0 12px;
+			font-size: 16px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:hover {
+				background-color: var(--rh-svg-bg-color);
+
+				.svg-icon {
+					animation: logoAnimation 0.3s ease-in-out;
+				}
+			}
+		}
+	}
+
+	// 侧边栏容器
+	.layout-aside {
+		width: var(--rh-aside-width);
+		background-color: var(--rh-aside-bg-color);
+		display: flex;
+		flex-direction: column;
+		overflow-x: hidden !important;
+		position: relative;
+		z-index: 1;
+		border-right: 1px solid var(--el-border-color-lighter);
+	}
+
+	// 主要区域容器
+	.layout-main {
+		padding: 0;
+		background: var(--rh-main-bg-color);
+	}
+}

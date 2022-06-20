@@ -1,0 +1,29 @@
+/*
+ * @Description: css 系统变量
+ * @Author: cdl
+ * @Date: 2022-06-11 12:12:33
+ * @LastEditors: cdl
+ * @LastEditTime: 2022-06-16 11:33:26
+ */
+:root {
+	/* 主体部分内容
+	------------------------------- */
+	--rh-main-bg-color: #f5f5f5; // 主体背景色
+	--rh-svg-bg-color: rgba(0, 0, 0, 0.04); // svg 背景色
+
+	/* 头部部分
+	------------------------------- */
+	--rh-header-height: 60px; // 头部高度
+
+	/* table
+	------------------------------- */
+	--rh-table-header-bg-color: #fcfcfc;
+
+	/* 侧边栏部分
+	------------------------------- */
+	--rh-aside-width: 300px; // 宽度
+	--rh-aside-bg-color: #fff; // 背景色
+	--rh-aside-child-bg-color: #fbfbfb; // 子级菜单背景色
+	--rh-aside-font-color: var(--el-text-color-primary); // 字体颜色
+	--rh-aside-font-size: 14px; // 字体大小
+}
